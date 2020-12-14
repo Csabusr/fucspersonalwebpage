@@ -1,0 +1,34 @@
+{% extends 'mainpage/index.html' %}
+
+{% block content %}
+
+<div class="container-xl">
+
+    <nav>{% include "mainpage/navbar.html" %}</nav>
+
+    <div class="row align-items-center">
+        <div class="col-6 align-self-center text-right">
+            <img class="profile_picture" src="static/images/me.jpg" alt="Picture about me">
+        </div>
+        <div class="col-6 align-self-center text-left">
+            <div class="about_me_column"><h2> Hi! 👨🏻‍💻</h2><br>
+                <h2>My name is Csaba Fügedi</h2></div>
+        </div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-3"></div>
+        <div class="col-6 align-self-center text-center">
+            <div class="about_me_column">
+                <hr class="hredit">
+                <h3 class="h3hide">Content about me Content about me</h3>
+                <p class="tuns">about me Content aboout me Content about meContent about meContent about meContent about</p>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div>{% include "mainpage/photopage.html" %}</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fügedi Csaba home page</title>
+    {% include 'mainpage/styles.html' %}
+</head>
+<body>
+<main>
+    <hr>
+
+    {% block content %}
+
+    {% endblock %}
+    <hr>
+
+
+
+
+    {% include 'mainpage/footer.html' %}
+</main>
+
+<!--login animation-->
+<div class="intro">
+    <div class="intro-text">
+        <h1 class="hide">
+            <span class="text">Programming</span>
+        </h1>
+        <h1 class="hide">
+            <span class="text">Learning</span>
+        </h1>
+        <h1 class="hide">
+            <span class="text">Educating.</span>
+        </h1>
+    </div>
+</div>
+<div class="slider"></div>
+<script type="text/javascript" src="{% static "js/welcomeanimation.js" %}"></script>
+
+</body>
+</html>
