@@ -28,12 +28,13 @@ SECRET_KEY = '4-a2j3q(e)%8ln3-&8xldq!k##08xtxhr57q74o*j$to4*h9ie'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fucspersonalwebpage.herokuapp.com','172.0.0.1']
+ALLOWED_HOSTS = ['fucspersonalwebpage.herokuapp.com','*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,24 +42,27 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainpage',
+    'webpage',
 ]
 
 MIDDLEWARE = [
-    #'django.middleware.security.SecurityMiddleware',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
-    #'django.contrib.sessions.middleware.SessionMiddleware',
-    #'django.middleware.common.CommonMiddleware',
-    #'django.middleware.csrf.CsrfViewMiddleware',
-    #'django.contrib.auth.middleware.AuthenticationMiddleware',
-    #'django.contrib.messages.middleware.MessageMiddleware',
-    #'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'django.middleware.security.SecurityMiddleware',
+    #'django.contrib.sessions.middleware.SessionMiddleware',
+    #'django.middleware.common.CommonMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.contrib.auth.middleware.AuthenticationMiddleware',
+    #'django.contrib.messages.middleware.MessageMiddleware',
+    #'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'webpage.urls'
