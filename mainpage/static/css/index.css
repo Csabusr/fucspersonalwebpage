@@ -1,8 +1,6 @@
 
 body {
-    background-image: url("../images/Background_pic.png");
-    background-size: cover;
-    font-family: Roboto;
+    background-color: transparent !important;
 }
 
 .footer {
@@ -13,10 +11,10 @@ body {
     color: white;
     margin-top: 10px;
     text-align: center;
-    font-family: Roboto;
     font-size: 3rem;
 }
-.ppadding{
+
+.ppadding {
     padding: 0px;
 }
 
@@ -38,16 +36,21 @@ body {
     horizontal-align: center;
     color: white;
 }
-.h2welcome{
+
+.h2welcome {
     vertical-align: bottom;
 }
 
+.navbarreflex {
+    height: 5%
+}
+
 .hredit {
-    border-top: 1px solid #989898;
+    border-top: 1px solid #0D0D0D;
 }
 
 .picture {
-    width: 320px;
+    width: 300px;
     background-color: white;
     margin: auto;
     border: 10px solid black;
@@ -61,24 +64,44 @@ body {
 }
 
 .picture-txt {
-    margin: auto;
-    width: 320px;
+    padding-top: 10px;
+    margin: auto !important;
+    width: 80%;
+    color: #911B00;
     text-align: center;
-    vertical-align: middle;
-    background-color: black;
-    color: white;
 }
-.tdedit{
+
+.tdedit {
     text-align: center;
     font-size: 24px;
 }
-.picture_caption{
-    font-size: 14px;
+
+.picture_caption {
+    font-size: 12px; height: auto; text-align: center;
 }
+
 .h1edit {
     color: white;
     text-align: center;
 }
-.picture_hr{
+
+.picture_hr {
+    border-top: 1px solid #ffffff;
     width: 50%;
+    text-align: center;
+    margin: auto;
 }
+
+.edittable {
+    width: 100%;
+    background-color: transparent !important;
+}
+
+html {
+    height: 100vh;
+    background-image: linear-gradient(to right, #000000, #0b2b20);
+}
+.link {
+  color: #DE4723 !important; text-align: center;
+}
+

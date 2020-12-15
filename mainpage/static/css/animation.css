@@ -9,7 +9,6 @@ main {
 
 .landing {
   min-height: 100vh;
-  background: url("../images/Background_pic.png");
   background-size: cover;
   padding: 0rem 5rem;
 }
@@ -17,7 +16,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 10vh;
+  min-height: 5%;
 }
 .nav-links {
   display: flex;
