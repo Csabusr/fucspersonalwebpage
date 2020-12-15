@@ -16,6 +16,9 @@ body {
     font-family: Roboto;
     font-size: 3rem;
 }
+.ppadding{
+    padding: 0px;
+}
 
 .menuitem {
     color: white;
@@ -31,9 +34,12 @@ body {
 }
 
 .about_me_column {
-    vertical-align: middle;
+    vertical-align: center;
     horizontal-align: center;
     color: white;
+}
+.h2welcome{
+    vertical-align: bottom;
 }
 
 .hredit {
